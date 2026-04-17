@@ -7,3 +7,11 @@
   border-radius: 5px;
   cursor: pointer;
 }
+
+header p.tung { 
+    color: green; 
+}
+
+.v {
+    size: 666;
+}
