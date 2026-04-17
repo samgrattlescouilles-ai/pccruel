@@ -10,6 +10,9 @@
 
 header p.tung { 
     color: green; 
+    margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .v {
