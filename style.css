@@ -1,0 +1,9 @@
+.mytestbtn {
+  background-color: hsl(293, 100%, 50%);
+  color: white;
+  font-size: 15px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
