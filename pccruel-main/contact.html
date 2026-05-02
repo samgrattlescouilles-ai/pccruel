@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact – PCRUEL</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="contact-page">
+<div class="page">
+
+  <a class="back-link" href="index.html">
+    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M10 3L5 8l5 5"/>
+    </svg>
+    Retour à l'accueil
+  </a>
+
+  <div class="contact-card">
+    <h1>Contact<span>.</span></h1>
+    <p class="sub">Une question, un partenariat ou un bug à signaler ? On vous répond vite.</p>
+
+    <div id="form-wrapper">
+      <div class="form-group">
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" name="nom" placeholder="Votre nom" autocomplete="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="votre@email.com" autocomplete="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="sujet">Sujet</label>
+        <select id="sujet" name="sujet">
+          <option value="" disabled selected>Choisissez un sujet…</option>
+          <option value="question">Question hardware</option>
+          <option value="partenariat">Partenariat / collaboration</option>
+          <option value="bug">Signaler un bug</option>
+          <option value="autre">Autre</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Décrivez votre demande…" required></textarea>
+      </div>
+
+      <button class="btn-submit" type="button" onclick="handleSubmit()">
+        Envoyer le message
+      </button>
+    </div>
+
+    <div class="success-msg" id="success-msg">
+      <div class="check">✅</div>
+      <p>Message envoyé avec succès !<br><strong>On vous répond dans les plus brefs délais.</strong></p>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  function handleSubmit() {
+    const nom     = document.getElementById('nom').value.trim();
+    const email   = document.getElementById('email').value.trim();
+    const sujet   = document.getElementById('sujet').value;
+    const message = document.getElementById('message').value.trim();
+
+    if (!nom || !email || !sujet || !message) {
+      // highlight empty fields
+      [['nom', nom], ['email', email], ['message', message]].forEach(([id, val]) => {
+        const el = document.getElementById(id);
+        if (!val) {
+          el.style.borderColor = 'rgba(255,80,80,.8)';
+          el.addEventListener('input', () => el.style.borderColor = '', { once: true });
+        }
+      });
+      if (!sujet) {
+        const sel = document.getElementById('sujet');
+        sel.style.borderColor = 'rgba(255,80,80,.8)';
+        sel.addEventListener('change', () => sel.style.borderColor = '', { once: true });
+      }
+      return;
+    }
+
+    // Simulate send
+    document.getElementById('form-wrapper').style.display = 'none';
+    const msg = document.getElementById('success-msg');
+    msg.style.display = 'block';
+  }
+</script>
+</body>
+</html>
