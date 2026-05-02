@@ -171,6 +171,7 @@ button:hover {
                  0 0 20px purple,
                  0 0 60px purple;
     margin-bottom: 1px;
+    margin-top: 1px;
 }
 
 a {
@@ -184,4 +185,112 @@ a {
     left: 0;
     display: flex;
     flex-direction: column;
+}
+
+#recherche {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 16px;
+    padding: 5px;
+    outline: none;
+    width: 80px;
+    margin-left: 160px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.soustitre2 { 
+    font-family: "Dark", sans-serif;
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+.image { 
+
+    width: 200px;
+    border: 2px solid rgb(230, 5, 230);
+
+
+}
+
+#grille-produits {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.qsn { 
+    font-size: 80px;
+    font-family: "Nosifer", sans-serif;
+    margin-top: 5px;
+     color: white;
+    text-shadow: 0 0 5px white,
+                 0 0 20px purple,
+                 0 0 60px purple;
+    margin-bottom: 1px;
+                
+}
+
+.tuff {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    margin-top: 5px;
+
+}
+
+#Origine {
+       font-family: "Dark", sans-serif;
+    font-size: 150px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    background: linear-gradient(to right, #ff00ff, #00ffff, #ff0000, #ff00ff);
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: degrader 3s infinite linear;
+    filter: saturate(5);
+}
+
+@keyframes degrader {
+    0%   { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+#dxd {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+
+}
+
+.role {
+       font-family: "Dark", sans-serif;
+    font-size: 88px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background: linear-gradient(to right, #ff00ff, #00ffff, #ff0000, #ff00ff);
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: degrader 3s infinite linear;
+    filter: saturate(5);
+}
+
+
+.description {
+     background: linear-gradient(to right, #ff0080, #ff6000, #0080ff, #ff0080);
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: degrader 4s infinite linear;
+    font-family: 'Courier New', monospace;
+    letter-spacing: 2px;
+    line-height: 2;
 }
