@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>RX 9060 - PCRUEL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- MENU GAUCHE -->
+    <div id="menu">
+        <a href="gpu.html">> Tous les GPU</a>
+        <a href="#">> Haut de gamme</a>
+        <a href="#"> ↓ Milieu de gamme</a>
+        <a href="#" style="margin-left: 15px;">> Nvidia</a>
+        <a href="#" style="margin-left: 15px;"> ↓ Radeon</a>
+        <a href="#" style="margin-left: 30px; color: mediumpurple;">RX 9060</a>
+        <a href="#" style="margin-left: 15px;">> Autres</a>
+        <a href="#">> Bas de gamme</a>
+    </div>
+
+    <!-- CONTENU PRINCIPAL -->
+    <div id="contenu">
+
+        <h1 class="titre-page">RX 9060</h1>
+
+        <div id="zone-produit">
+
+            <!-- IMAGE -->
+            <div id="zone-image">
+                <img src="placeholder.jpg" alt="RX 9060" id="img-produit">
+            </div>
+
+            <!-- INFOS -->
+            <div id="zone-infos">
+                <p id="prix">Prix Moyen : <span style="color: limegreen;">340 €</span></p>
+
+                <div id="accordion">
+
+                    <div class="section">
+                        <p class="section-titre" onclick="ouvrir('description')">
+                            > Description
+                        </p>
+                        <div class="section-contenu" id="description" style="display: none;">
+                            <p>La Radeon RX 9060 est une carte graphique milieu de gamme d'AMD. Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <p class="section-titre" onclick="ouvrir('specs')">
+                            ↓ <span style="color: mediumpurple;">Specs</span>
+                        </p>
+                        <div class="section-contenu" id="specs">
+                            <ul>
+                                <li>Architecture : RDNA 4</li>
+                                <li>VRAM : 8 Go GDDR6</li>
+                                <li>TDP : 150W</li>
+                                <li>Connecteurs : 1x HDMI 2.1, 3x DisplayPort 2.1</li>
+                                <li>Lorem ipsum</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- MEILLEURES OFFRES -->
+            <div id="zone-offres">
+                <h2>Meilleurs<br>Offres</h2>
+                <ul>
+                    <li><a href="#">Site 1</a></li>
+                    <li><a href="#">Site 2</a></li>
+                    <li><a href="#">Site 3</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- PERFORMANCES -->
+        <div id="zone-perfs">
+            <h2>Perfs</h2>
+            <p>lorem ipsum</p>
+            <img src="placeholder.jpg" alt="benchmark" id="img-bench">
+        </div>
+
+    </div>
+
+    <footer>
+        <a href="contact.html">Contact</a>
+        <a href="#">Mentions Légales</a>
+    </footer>
+
+    <script>
+        // ouvre ou ferme une section de l accordion
+        function ouvrir(id) {
+            let section = document.getElementById(id);
+            if (section.style.display === "none") {
+                section.style.display = "block";
+            } else {
+                section.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,14 +1,125 @@
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Eater&family=Nosifer&display=swap" rel="stylesheet">
 </head>
 <html>
 <body>
 <header>
-    <p class="tung">PC zone</p>
+    <a href="index.html">
+    <p class="pcruel">PC<span>RUEL</span></p>
+    </a>
 </header>
-<h1>GPU</h1>
+<h1 class="gpu" >GPU</h1>
 <p style="color: rgb(21, 124, 214);">My first paragraph.</p>
+
+
+
+
+    <!-- MENU GAUCHE -->
+    <div id="menu">
+        <a href="gpu.html">> Tous les GPU</a>
+        <a href="#">> Haut de gamme</a>
+        <a href="#">> Milieu de gamme</a>
+        <a href="#">> Bas de gamme</a>
+    </div>
+
+    <!-- CONTENU PRINCIPAL -->
+    <div id="contenu">
+
+        <p id="nb-produits">12 produits trouvés</p>
+
+        <!-- BARRE DE RECHERCHE -->
+        <input type="text" id="recherche" placeholder="Rechercher un GPU..." onkeyup="filtrer()">
+
+        <!-- GRILLE DE PRODUITS -->
+        <div id="grille-produits">
+
+            <div class="carte" onclick="allerVers('gpu-produit.html')">
+                <img src="placeholder.jpg" alt="GPU 1">
+                <p>Radeon RX 9060</p>
+            </div>
+
+            <div class="carte" onclick="allerVers('gpu-produit.html')">
+                <img src="placeholder.jpg" alt="GPU 2">
+                <p>Placeholder</p>
+            </div>
+
+            <div class="carte" onclick="allerVers('gpu-produit.html')">
+                <img src="placeholder.jpg" alt="GPU 3">
+                <p>Placeholder</p>
+            </div>
+
+            <div class="carte" onclick="allerVers('gpu-produit.html')">
+                <img src="placeholder.jpg" alt="GPU 4">
+                <p>Placeholder</p>
+            </div>
+
+            <div class="carte" onclick="allerVers('gpu-produit.html')">
+                <img src="placeholder.jpg" alt="GPU 5">
+                <p>Placeholder</p>
+            </div>
+
+            <div class="carte" onclick="allerVers('gpu-produit.html')">
+                <img src="placeholder.jpg" alt="GPU 6">
+                <p>Placeholder</p>
+            </div>
+
+            <div class="carte" onclick="allerVers('gpu-produit.html')">
+                <img src="placeholder.jpg" alt="GPU 7">
+                <p>Placeholder</p>
+            </div>
+
+            <div class="carte" onclick="allerVers('gpu-produit.html')">
+                <img src="placeholder.jpg" alt="GPU 8">
+                <p>Placeholder</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <a href="contact.html">Contact</a>
+        <a href="#">Mentions Légales</a>
+    </footer>
+
+    <script>
+        // redirige vers une page
+        function allerVers(page) {
+            window.location.href = page;
+        }
+
+        // filtre les cartes selon ce que l utilisateur tape
+        function filtrer() {
+            let texte = document.getElementById("recherche").value.toLowerCase();
+            let cartes = document.getElementsByClassName("carte");
+
+            for (let i = 0; i < cartes.length; i++) {
+                let nom = cartes[i].getElementsByTagName("p")[0].innerText.toLowerCase();
+                if (nom.includes(texte)) {
+                    cartes[i].style.display = "block";
+                } else {
+                    cartes[i].style.display = "none";
+                }
+            }
+
+            // met a jour le compteur
+            let visibles = 0;
+            for (let i = 0; i < cartes.length; i++) {
+                if (cartes[i].style.display !== "none") {
+                    visibles++;
+                }
+            }
+            document.getElementById("nb-produits").innerText = visibles + " produits trouvés";
+        }
+    </script>
+
 
 </body>
 </html>
