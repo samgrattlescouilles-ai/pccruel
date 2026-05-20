@@ -8,7 +8,7 @@
 
 ## 20/04/2026
   - Brainstorming et validation de l'arborescence des fichiers
-  - Maquetatage papier des pages `index.html`, `gpu.html` et `contact.html`
+  - Maquetatage des pages `index.html`, `gpu.html` et `contact.html`
   - Répartition des tâches dev initiales 
   - Dépôt  créé sur github
 
