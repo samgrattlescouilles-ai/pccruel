@@ -5,6 +5,75 @@
 ## Thème : SIte de Comparaison Hardware
 
 
+## 02/04/2026
+# Travail fait : 
+
+- Choix du thème du site web à réaliser (PC comparaison hardware).  
+- Mise en commun sur les fonctionnalités principales du site.  
+- Répartition initiale des rôles entre les membres du groupe.  
+
+# Répartition : 
+
+Wassim Fafi : idées design  
+Mehdi Ladjal : structure du site + organisation des pages  
+Vuk Kojic : recherche d’inspirations visuelles + contenu + illustration + coordination du projet  
+
+ 
+
+## 03/04/2026
+# Travail effectué : 
+
+- Recherche de modèles de sites similaires.  
+- Analyse des couleurs, menus et disposition des éléments.  
+- Début du zoning (schéma simple des pages).  
+
+# Répartition : 
+
+Wassim : proposition des couleurs  
+Mehdi : croquis page d’accueil  
+Vuk : collecte d’images + logos + idées graphiques  
+
+ 
+
+## 09/04/2026
+# Travail effectué : 
+
+- Début de la maquette sur Canva.  
+- Création de la page d’accueil.  
+- Placement du menu de navigation, bannière et sections principales.  
+
+# Répartition : 
+
+Wassim : design général sur canva 
+Mehdi : menu/navigation  
+Vuk : textes de présentation + mise en page 
+
+ 
+
+## 10/04/2026
+# Travail effectué : 
+
+- Amélioration de la page d’accueil.  
+- Création des autres pages (page contact, informations, etc.).  
+- Harmonisation des couleurs et polices.  
+
+# Répartition : 
+
+Wassim : absent 
+Mehdi : structure pages secondaires  
+Vuk : contenus écrits  
+
+ 
+
+## 17/04/2026
+# Travail effectué : 
+
+- Finalisation de la maquette 
+- Vérification de la cohérence entre les pages.  
+- Préparation du rendu final. 
+
+
+
 
 ## 20/04/2026
   - Brainstorming et validation de l'arborescence des fichiers
